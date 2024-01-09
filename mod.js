@@ -66,11 +66,15 @@ export const calcIntToInt = async (shaderCode, numbers) => {
 
   device.queue.submit([encoder.finish()]);
   await stagingBuffer.mapAsync(1);
-  
+
   const arrayBufferData = stagingBuffer.getMappedRange();
   const uintData = new Uint32Array(arrayBufferData);
   const res = new Uint32Array(uintData.length);
   for (let i = 0; i < uintData.length; i++) res[i] = uintData[i];
   stagingBuffer.unmap();
+  
+  stagingBuffer.destroy();
+  storageBuffer.destroy();
+  device.destroy();
   return res;
 };
