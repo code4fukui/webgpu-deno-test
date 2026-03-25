@@ -1,37 +1,21 @@
 # webgpu-deno-test
-日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-This project is a set of examples demonstrating the use of WebGPU (a low-level graphics API) with Deno (a modern JavaScript/TypeScript runtime).
+A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
-## Features
-- Implements various WebGPU-based computations, including:
-  - Performing integer-to-integer calculations using compute shaders
-  - Calculating the Fibonacci sequence
-  - Implementing the Collatz conjecture
-  - Using various table lookup patterns in compute shaders
-- Showcases different ways of structuring and organizing WebGPU code in a Deno environment
+**Live demo**: https://code4fukui.github.io/webgpu-deno-test/
 
-## Requirements
-- Deno 1.39.2 or later
-- A modern web browser that supports the WebGPU API (currently only available in certain Chromium-based browsers behind a flag)
+## Technology Stack
 
-## Usage
-1. Clone the repository:
-   ```
-   git clone https://github.com/username/webgpu-deno-test.git
-   ```
-2. Change to the project directory:
-   ```
-   cd webgpu-deno-test
-   ```
-3. Run the examples using Deno:
-   ```
-   deno run --allow-all add1.js
-   deno run --allow-all fib_main.js
-   deno run --allow-all collatz.js
-   deno run --allow-all tbl_main.js
-   ```
-   You can also open the HTML files in a compatible browser to see the examples running in the browser.
+
+## Installation & Setup
+
+No build step required. Clone the repository and open `index.html` in a browser,
+or visit the live demo at https://code4fukui.github.io/webgpu-deno-test/
+
+## Contributing
+
+Contributions are welcome. Please open an issue or pull request on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+
+MIT License. See [LICENSE](./LICENSE) for details.
